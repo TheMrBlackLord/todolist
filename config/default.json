@@ -1,4 +1,4 @@
 {
-   "mongoUri": "mongodb+srv://dbUser:d6gnPbex9I1htB0K@maincluster.iuvjg.mongodb.net/todo_app?retryWrites=true&w=majority",
-   "jwtSecretKey": "MrBLackLord 69420 secret todo list app"
+   "mongoUri": "",
+   "jwtSecretKey": ""
 }
