@@ -1,0 +1,51 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-vue/dist/bootstrap-vue.min.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css';
+
+p {
+   margin: 0;
+}
+
+.section {
+   margin-top: 10px;
+   .title {
+      color: black;
+      font-size: 24px;
+      border-bottom: 5px solid black;
+   }
+}
+.add-task-form {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  .form-control {
+     width: 74%;
+  } 
+  .btn {
+     width: 24%;
+  }
+}
+.todo-item {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border: 1px solid #9fa2a5;
+   border-radius: 5px;
+   padding: 8px 15px;
+   text-align: left;
+   font-weight: 500;
+   overflow: hidden;
+   transition: 0.3s;
+   &:hover{
+      background: #d4d4d4;
+      &>.controls {
+        opacity: 1;
+      }
+   }
+   &:not(:last-child) {
+      margin-bottom: 10px;
+   }
+   .controls {
+      opacity: 0;
+   }
+}
